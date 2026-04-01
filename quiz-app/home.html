@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Quiz App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <span class="header-logo">QUIZ APP</span>
+    <div class="header-right">
+      <div class="profile-wrap">
+        <button class="profile-icon-btn" id="profile-btn" title="Account">U</button>
+        <div class="profile-dropdown" id="profile-dropdown">
+          <button class="dropdown-item" id="profile-page-btn">Profile</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item danger" id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-body">
+
+    <!-- Banner -->
+    <div class="home-banner">
+      <h1>Welcome to Quiz App</h1>
+      <p>Test your Core CSE knowledge across five subjects. Select a subject below to begin a timed 50-question quiz.</p>
+    </div>
+
+    <!-- Subject cards -->
+    <div class="subjects-section">
+      <div class="section-label">Select a Subject</div>
+      <div class="subject-grid" id="subject-grid">
+
+        <div class="subject-card" onclick="goToQuiz('DSA')">
+          <div class="subject-card-header">
+            <span class="subject-tag">DSA</span>
+            <span class="subject-count">50 questions</span>
+          </div>
+          <p class="subject-desc">Data Structures and Algorithms — sorting, searching, trees, graphs, dynamic programming, and complexity analysis.</p>
+          <div class="subject-topics">
+            <span class="topic-chip">Arrays</span>
+            <span class="topic-chip">Linked Lists</span>
+            <span class="topic-chip">Trees</span>
+            <span class="topic-chip">Graphs</span>
+            <span class="topic-chip">Sorting</span>
+            <span class="topic-chip">Hashing</span>
+          </div>
+          <div class="subject-start-row">
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="subject-card" onclick="goToQuiz('DBMS')">
+          <div class="subject-card-header">
+            <span class="subject-tag">DBMS</span>
+            <span class="subject-count">50 questions</span>
+          </div>
+          <p class="subject-desc">Database Management Systems — SQL, normalization, transactions, ACID properties, indexing, and relational algebra.</p>
+          <div class="subject-topics">
+            <span class="topic-chip">SQL</span>
+            <span class="topic-chip">Normalization</span>
+            <span class="topic-chip">Transactions</span>
+            <span class="topic-chip">Keys</span>
+            <span class="topic-chip">Joins</span>
+            <span class="topic-chip">Indexing</span>
+          </div>
+          <div class="subject-start-row">
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="subject-card" onclick="goToQuiz('OS')">
+          <div class="subject-card-header">
+            <span class="subject-tag">OS</span>
+            <span class="subject-count">50 questions</span>
+          </div>
+          <p class="subject-desc">Operating Systems — process scheduling, memory management, deadlocks, virtual memory, file systems, and synchronization.</p>
+          <div class="subject-topics">
+            <span class="topic-chip">Scheduling</span>
+            <span class="topic-chip">Deadlocks</span>
+            <span class="topic-chip">Paging</span>
+            <span class="topic-chip">Semaphores</span>
+            <span class="topic-chip">Virtual Memory</span>
+          </div>
+          <div class="subject-start-row">
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="subject-card" onclick="goToQuiz('CN')">
+          <div class="subject-card-header">
+            <span class="subject-tag">CN</span>
+            <span class="subject-count">50 questions</span>
+          </div>
+          <p class="subject-desc">Computer Networks — OSI model, TCP/IP, protocols, routing, IP addressing, subnetting, and network security basics.</p>
+          <div class="subject-topics">
+            <span class="topic-chip">OSI Model</span>
+            <span class="topic-chip">TCP/IP</span>
+            <span class="topic-chip">DNS</span>
+            <span class="topic-chip">Routing</span>
+            <span class="topic-chip">Subnetting</span>
+          </div>
+          <div class="subject-start-row">
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="subject-card" onclick="goToQuiz('OOPS')">
+          <div class="subject-card-header">
+            <span class="subject-tag">OOPS</span>
+            <span class="subject-count">50 questions</span>
+          </div>
+          <p class="subject-desc">Object-Oriented Programming — encapsulation, inheritance, polymorphism, abstraction, SOLID principles, and design patterns.</p>
+          <div class="subject-topics">
+            <span class="topic-chip">Inheritance</span>
+            <span class="topic-chip">Polymorphism</span>
+            <span class="topic-chip">Abstraction</span>
+            <span class="topic-chip">SOLID</span>
+            <span class="topic-chip">Design Patterns</span>
+          </div>
+          <div class="subject-start-row">
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="utils/helpers.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
